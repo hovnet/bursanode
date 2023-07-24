@@ -7,7 +7,6 @@ const MAIN3 = require('./Externalsapi/Twelve');
 const MAIN = require('./Externalsapi/finance');
 const MAIN1 = require('./Externalsapi/Polygon');
 const axios = require('axios');
-//arik levi
 var corsOptions = {
   origin: '*',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
