@@ -1,0 +1,73 @@
+<div style="padding: 1cm;">
+<div>
+<h2 style="color:rgb(8, 62, 21)">ברוכים הבאים {{title}}</h2>  
+</div>
+<div>
+  <!-- </h3> -->
+  <h3 style="color:rgb(214, 55, 76);font-weight: bold;">
+    מחיר סגירה:  {{Current_Stock_Price}} 
+  </h3>
+  </div>
+  <div>
+    <h3 style="color:rgb(214, 55, 76);font-weight: bold;">
+      תאריך עידכון אחרון:  {{Latest}} 
+    </h3>
+  
+  </div>
+
+  <div>
+    <h3 style="color:rgb(104, 61, 224);font-weight: bold;">
+      <!-- tab select -->
+      </h3>
+      <!-- <h4>native html select</h4> -->
+      <mat-form-field>
+        <mat-label>בחר מניה</mat-label>
+        <select matNativeControl [(ngModel)]="selected">
+          <!-- <option value="" selected></option> -->
+          <!-- <option value ="NASDAQ">נסדק</option> -->
+          <!-- <option value="AAPL" disabled>Saab</option> -->
+          <option value="AAPL">אפל(AAPL)</option>
+          <option value="AMZN">אמזון(AMZN)</option>
+          <option value="MSFT">מיקרוסופט(MSFT)</option>
+          <option value="GOOG">גוגל(GOOG)</option>
+          <option value="META">פייסבוק(META)</option> //
+          <!-- <option value="AUDI">מיקרוסופט</option>
+          <option value="AUDI">מיקרוסופט</option>
+          <option value="AUDI">מיקרוסופט</option> -->
+        </select>
+      </mat-form-field>
+      {{selected}}
+    </div>
+
+    <div>
+      <button type="button" class="btn btn-primary" mdbRipple (click)="getProps()">הצג פרטי מניה</button>
+    </div>
+    <div>
+
+      <!-- <mat-table class="lessons-table mat-elevation-z8" [dataSource]="datasource">
+  
+        <ng-container matColumnDef="Open">
+            <div *matHeaderCellDef>#</div>
+            <div *matCellDef="let lesson">{{lesson['1. open']}}</div>
+        </ng-container>  -->
+      
+        <!-- <ng-container matColumnDef="description">
+            <div *matHeaderCellDef>Description</div>
+            <div class="description-cell"
+                      *matCellDef="let lesson">{{lesson.description}}</div>
+        </ng-container>
+      
+        <ng-container matColumnDef="duration">
+            <div *matHeaderCellDef>Duration</div>
+            <div class="duration-cell"
+                      *matCellDef="let lesson">{{lesson.duration}}</div>
+        </ng-container> -->
+        
+        <!-- <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row> -->
+        
+        <!-- <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row> -->
+        
+    <!-- </mat-table> -->
+    </div>
+    </div>
+
