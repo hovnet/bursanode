@@ -30,7 +30,7 @@ class Mail {
           const symbol = this.symbol;
           const FunctionFinance = ["GLOBAL_QUOTE","TIME_SERIES_DAILY","TIME_SERIES_WEEKLY","TIME_SERIES_MONTHLY","SYMBOL_SEARCH"];
           // const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${apiKey}`;
-          const url = `https://www.alphavantage.co/query?function=${FunctionFinance[3]}&symbol=${symbol}&apikey=${apiKey}`;
+          const url = `https://www.alphavantage.co/query?function=${FunctionFinance[2]}&symbol=${symbol}&apikey=${apiKey}`;
           var ar;
           await axios.get(url)
             .then(response => {
